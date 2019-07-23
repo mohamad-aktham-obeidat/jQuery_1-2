@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var count = $('#target div').length;
-    console.log('COUNT', count)
+    alert(count)
 });
 
 
