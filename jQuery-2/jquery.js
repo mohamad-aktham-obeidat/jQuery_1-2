@@ -95,16 +95,19 @@ $(document).ready(function() {
 // EXERCISE 9: Change Size
 // Make "#target" double size
 
- $(document).ready(function() {
+/* $(document).ready(function() {
      var ourDiv = $('#target');
      ourDiv.height(ourDiv.height() *2)
      ourDiv.width(ourDiv.width() *2)
-}); 
+}); */
 
 
 // EXERCISE 10: Empty Elements
 // Remove all children and text of "#target"
 
+$(document).ready(function () {
+    $('#target').contents().remove();
+});
 
 // Advanced part
 // EXERCISE 11: Delay
