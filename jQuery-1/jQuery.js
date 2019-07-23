@@ -2,19 +2,40 @@
 Q1:
 Check if jQuery is loaded
 */
-
-
+//DONE
 /*
+
 Q2:
 If You would have very long website - How to help user with fast getting back on top :)
 */
+$(document).ready(function () {
+    $('#goUpBtn').on('click', function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
 
-
+    })
+})
 /*
 Q3:
 If You would like to change sizes of Your div/button with on click :)
 */
+var oldWidth, oldHeight;
 
+$(document).ready(function () {
+     oldWidth = $('#box').width();
+     oldHeight = $('#box').height();
+
+    $('#btn1').on('click', function () {
+    $('#box').animate({width: '300px', height: '300px'})
+    })
+})
+
+$(document).ready(function () {
+    $('#btn2').on('click', function () {
+    $('#box').animate({width: oldWidth, height: oldHeight})
+    })
+})
 
 /*
 Q4:
