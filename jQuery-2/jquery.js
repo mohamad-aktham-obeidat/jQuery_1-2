@@ -11,15 +11,27 @@ $(document).ready(function() {
 
 // EXERCISE 2: Change Parent
 // Change the text in the span, a child of "#target"
+
+/*   
 $(document).ready(function() {
     $('#target span').css('color', 'red');
 })
-
+*/
 
 
 
 // EXERCISE 3: Create Clone
 // Create a clone of the span in "#target" and position it under the origin.
+
+
+$(document).ready(function() {
+    var origialSpan = $('#target span');
+    var newSpan = $('#target span').clone();
+
+    origialSpan.after(newSpan);
+
+    $('#target').css('width', '300px');
+});
 
 
 // EXERCISE 4: Use Filter
