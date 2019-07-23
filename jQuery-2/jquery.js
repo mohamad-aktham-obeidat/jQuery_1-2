@@ -75,18 +75,20 @@ $(document).ready(function() {
 // EXERCISE 7: Change Parent
 // Move "#child" from "#parent1" to "#parent2"
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     var child = $('#child');
     var cloneChild = child.clone();
     child.remove();
     $('#parent2').append(cloneChild);
 });
+ */
 
 
-
-// EXERCISE 8: Select A Option in A Select Box
+// EXERCISE 8: Select An Option in A Select Box
 // Select the second option in the selectbox by script
-
+$(document).ready(function() {
+    $('option:eq(1)').attr('selected', true)
+});
 
 
 // EXERCISE 9: Change Size
