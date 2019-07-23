@@ -113,7 +113,11 @@ $(document).ready(function () {
 // EXERCISE 11: Delay
 // Show Alert with 1 second delay (Use "setTimeout")
 
-
+$(document).ready(function () {
+    setTimeout(function() {
+        alert('Advance part,  Exercise #11');
+    }, 1000)
+});
 
 // EXERCISE 12: Count
 // Show the number of children in an alert
