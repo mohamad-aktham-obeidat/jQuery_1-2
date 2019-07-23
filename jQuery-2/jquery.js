@@ -152,15 +152,25 @@ $(document).ready(function() {
 // EXERCISE 15: All But One
 // Remove all children of "#target" but h2
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     var target = $("#target");
-    target.children().not('h2').remove();});
+    target.children().not('h2').remove();}); */
 
 
 // EXERCISE 16: Without Children
-// Remove all 'div' whitch has no child elements.
+// Remove all 'div' which has no child elements.
 
+$(document).ready(function () {
+    var target = $(".target");
+    console.log(target.length)
 
+    for (var i = 0; i < target.length; i++) {
+        if (target[i].children.length === 0) {
+            console.log(target[i]);
+            target[i].remove();
+        }
+    }
+});
 
 
 
