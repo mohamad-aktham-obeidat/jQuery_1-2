@@ -123,15 +123,22 @@ $(document).ready(function() {
 // Show the number of children in an alert
 
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     var count = $('#target div').length;
     alert(count)
 });
-
+ */
 
 // EXERCISE 13: Animate
 // Make "#target" double size with animation
-
+$(document).ready(function() {
+    var target = $("#target");
+    var dimentions = {
+        height: target.height() * 2,
+        width: target.width() * 2
+    };
+    target.animate(dimentions, 4000);
+});
 
 // EXERCISE 14: Alternate Color
 // Make the list-box alternating. (Make odd options a different color)
