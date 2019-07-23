@@ -86,15 +86,20 @@ $(document).ready(function() {
 
 // EXERCISE 8: Select An Option in A Select Box
 // Select the second option in the selectbox by script
-$(document).ready(function() {
+
+/* $(document).ready(function() {
     $('option:eq(1)').attr('selected', true)
-});
+}); */
 
 
 // EXERCISE 9: Change Size
 // Make "#target" double size
 
-
+ $(document).ready(function() {
+     var ourDiv = $('#target');
+     ourDiv.height(ourDiv.height() *2)
+     ourDiv.width(ourDiv.width() *2)
+}); 
 
 
 // EXERCISE 10: Empty Elements
