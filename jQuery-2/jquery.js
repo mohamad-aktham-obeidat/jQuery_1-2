@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 /*   
 $(document).ready(function() {
-    $('#target span').css('color', 'red');
+    $('#target span').text('text changed');
 })
 */
 
@@ -64,16 +64,23 @@ $(document).ready(function() {
 // EXERCISE 6: Uncheck CheckBoxes
 // Uncheck all checkboxes using jQuery
 
-
+/* 
 $(document).ready(function() {
     $('.target input[type="checkbox"]').attr('checked', false);
 });
-
+ */
 
 
 
 // EXERCISE 7: Change Parent
 // Move "#child" from "#parent1" to "#parent2"
+
+$(document).ready(function() {
+    var child = $('#child');
+    var cloneChild = child.clone();
+    child.remove();
+    $('#parent2').append(cloneChild);
+});
 
 
 
