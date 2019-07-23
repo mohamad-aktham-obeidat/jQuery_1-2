@@ -1,9 +1,19 @@
 // EXERCISE 1: Change Background
-// Change the background color of '#target' by script. 
+// Change the background color of '#target' by script.
+
+/*
+$(document).ready(function() {
+    $('#target').css('background-color', 'lightblue');
+});
+*/
+
 
 
 // EXERCISE 2: Change Parent
 // Change the text in the span, a child of "#target"
+$(document).ready(function() {
+    $('#target span').css('color', 'red');
+})
 
 
 
