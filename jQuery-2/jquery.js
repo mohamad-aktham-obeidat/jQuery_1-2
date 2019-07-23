@@ -23,6 +23,7 @@ $(document).ready(function() {
 // EXERCISE 3: Create Clone
 // Create a clone of the span in "#target" and position it under the origin.
 
+/*
 
 $(document).ready(function() {
     var origialSpan = $('#target span');
@@ -33,9 +34,18 @@ $(document).ready(function() {
     $('#target').css('width', '300px');
 });
 
+*/
 
 // EXERCISE 4: Use Filter
 // Change background color of the second ".target"
+
+
+$(document).ready(function() {
+    $('.target:eq(1)').css('background-color', 'red')
+});
+
+
+
 
 
 
