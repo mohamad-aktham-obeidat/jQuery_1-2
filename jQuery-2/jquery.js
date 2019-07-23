@@ -105,23 +105,28 @@ $(document).ready(function() {
 // EXERCISE 10: Empty Elements
 // Remove all children and text of "#target"
 
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('#target').contents().remove();
-});
+}); */
 
 // Advanced part
 // EXERCISE 11: Delay
 // Show Alert with 1 second delay (Use "setTimeout")
 
-$(document).ready(function () {
+/* $(document).ready(function () {
     setTimeout(function() {
         alert('Advance part,  Exercise #11');
     }, 1000)
-});
+}); */
 
 // EXERCISE 12: Count
 // Show the number of children in an alert
 
+
+$(document).ready(function() {
+    var count = $('#target div').length;
+    console.log('COUNT', count)
+});
 
 
 // EXERCISE 13: Animate
