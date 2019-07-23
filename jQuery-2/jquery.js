@@ -143,15 +143,18 @@ $(document).ready(function() {
 // EXERCISE 14: Alternate Color
 // Make the list-box alternating. (Make odd options a different color)
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     var target = $("#target select option:odd");
     target.css('background-color', 'orange');
-});
+}); */
 
 
 // EXERCISE 15: All But One
 // Remove all children of "#target" but h2
 
+$(document).ready(function() {
+    var target = $("#target");
+    target.children().not('h2').remove();});
 
 
 // EXERCISE 16: Without Children
