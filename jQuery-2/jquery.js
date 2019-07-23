@@ -52,17 +52,23 @@ $(document).ready(function() {
 
 // EXERCISE 5: Disable Buttons
 // Disable the button
-
+/* 
 $(document).ready(function() {
     $('.target button').attr('disabled', true);
 });
-
+ */
 
 
 
 
 // EXERCISE 6: Uncheck CheckBoxes
 // Uncheck all checkboxes using jQuery
+
+
+$(document).ready(function() {
+    $('.target input[type="checkbox"]').attr('checked', false);
+});
+
 
 
 
